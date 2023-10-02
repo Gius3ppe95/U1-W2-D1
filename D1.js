@@ -17,16 +17,16 @@ REGOLE
 //   Number : inserimento di un numero . es: 1,2,3...100;
 //   Boolean: ha come valori true (vero) e false (falso);
 //   Undefined: si usa quando non è stata inserita correttamente una variabile precedente;
-//   Null
+//   Null: si associa alle variabili che non hanno nessun valore.
 
 /* ESERCIZIO 2
-
-
-
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let name = "Giuseppe";
+console.log(name);
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
@@ -34,9 +34,14 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let num1 = 12;
+let num2 = 20;
+console.log(num1 + num2);
+
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
+let x = 12;
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -44,14 +49,23 @@ REGOLE
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let name = "Chiarella";
+const myName = "Giuseppe";
+console.log(name);
+
+//Uncaught SyntaxError: Identifier 'name' has already been declared: questo è quello che apparirà sulla nostra console in fase di prova.
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let num3 = 4;
+let num4 = x - num3;
+console.log("Valore di num4:", num4);
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
@@ -60,3 +74,11 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let name1 = " john";
+let name2 = "John";
+console.log(name1 === name2);
+var str = " john";
+console.log(str.toLowerCase(name2));
+
+console.log(name1 === str);
